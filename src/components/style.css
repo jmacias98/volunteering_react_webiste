@@ -1,0 +1,52 @@
+:root {
+  --linear-gradient: linear-gradient(90deg, #f05a28, #ec008c);
+  --black: black;
+  --white: white;
+  --variant_color-1: #f05a28;
+  --variant_color-2: #ec008c;
+  --darkgray: rgb(50, 50, 50);
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+.btn {
+  width: 200px;
+  height: inherit;
+  padding: 15px;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 15px 24px;
+  background-size: 300% 100%;
+  background-image: linear-gradient(to right, #f05a28, #ec008c, #ec008c);
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px black;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  /* border-left: 5px #ec008c solid; */
+  box-shadow: none;
+  text-decoration: underline;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}

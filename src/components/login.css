@@ -1,0 +1,118 @@
+.loginBoxContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: calc(100vh - 15vh);
+  background: rgb(50, 50, 50);
+}
+.loginBox {
+  width: 700px;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(34, 34, 34);
+  border-radius: 10px;
+  transition: ease-in 0.5s;
+  border-bottom: grey 3px solid;
+}
+.loginBox:hover {
+  border-bottom: #ec008c 3px solid;
+  background: black;
+}
+
+.loginBox h1 {
+  color: white;
+  padding: 0.5rem;
+}
+.searchForm {
+  display: flex;
+  align-items: center;
+}
+.loginForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.loginForm input {
+  width: 70%;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.volunteer_sign-button {
+  width: 70%;
+  min-height: 60px;
+}
+
+.sing-up {
+  color: var(--white);
+  margin: 10px 0 0;
+  transition: 0.3s ease-in-out;
+}
+.sing-up:hover {
+  text-decoration: underline;
+}
+
+.login_forget-password {
+  color: white;
+  margin: 5px;
+  transition: 0.3s ease-in-out;
+}
+.login_forget-password:hover {
+  text-decoration: underline;
+}
+
+.volunteer_sign-validate-input {
+  color: red;
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 820px and up) */
+@media only screen and (max-width: 820px) {
+  .loginBox {
+    width: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 750px and up) */
+@media only screen and (max-width: 750px) {
+}
+
+/* Medium devices (landscape tablets, 650px and up) */
+@media only screen and (max-width: 650px) {
+  .loginBox {
+    width: 97%;
+  }
+  .loginForm input {
+    width: 90%;
+    border-radius: 0;
+  }
+
+  .volunteer_sign-button {
+    width: 90%;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 0;
+  }
+}
+
+/* Medium devices (landscape tablets, 300px and up) */
+@media only screen and (max-width: 300px) {
+  .loginBox {
+    width: 100%;
+  }
+
+  .loginForm input {
+    width: 100%;
+  }
+
+  .volunteer_sign-button {
+    width: 100%;
+  }
+}

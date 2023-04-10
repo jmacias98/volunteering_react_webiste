@@ -1,0 +1,96 @@
+* > * {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wholePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--darkgray);
+}
+
+.authorizeForm {
+  max-width: 978px;
+  width: 100vw;
+  display: flex;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  box-shadow: 1px 3px 10px #e9ecef;
+  background-color: white;
+}
+h1 {
+  font-size: 50px;
+}
+
+.mottoPhrase {
+  color: #9198a0;
+  margin: 5px;
+  margin-bottom: 30px;
+}
+
+#form {
+  max-width: 320px;
+  width: 100vw;
+  margin: 2em auto;
+}
+
+#form > input {
+  padding: 0.9em 1em;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+}
+
+#form > input:focus {
+  border: 2px solid #555;
+}
+
+#form > .signInLink {
+  margin: 0.5em 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+#form > .signInLink a {
+  color: rgb(32, 32, 248);
+  text-decoration: none;
+}
+
+#form > .signInLink a:hover {
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+  gap: 0.5em;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.authorizeForm .leftColumn {
+  margin: auto;
+  padding: 2em 0;
+}
+
+.authorizeForm .rightColumn img {
+  width: 480px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+}
+
+.registerButton {
+  width: 100%;
+  margin: 0;
+}
+
+@media screen and (min-width: 860px) {
+  .authorizeForm .rightColumn img {
+    display: initial;
+  }
+}
